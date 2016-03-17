@@ -16,7 +16,7 @@
  * Atlanta, GA 30339 USA
  */
 
-package com.manh.cp.dto;
+package com.github.prajan.dto;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;

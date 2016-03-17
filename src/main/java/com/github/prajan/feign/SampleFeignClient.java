@@ -16,38 +16,16 @@
  * Atlanta, GA 30339 USA
  */
 
-package com.manh.cp.dto;
+package com.github.prajan.feign;
 
-import com.manh.cp.dto.UniversityBaseDTO;
-import io.swagger.annotations.ApiModel;
+import org.springframework.cloud.netflix.feign.FeignClient;
+import org.springframework.http.MediaType;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
-import javax.annotation.Generated;
+@FeignClient(name="testapp", url = "http://localhost:8080")
+public interface SampleFeignClient {
 
-@Generated(value = "Generated once by EntityFramework")
-@ApiModel(value="University")
-public class UniversityDTO extends UniversityBaseDTO
-{
-
-    public UniversityDTO()
-    {
-        super();
-    }
-
-    public UniversityDTO(UniversityBaseDTO.KeyDTO key)
-    {
-        super(key);
-    }
-
-
-    /**
-     * If fields are added to this subclass, they should be included in this
-     * toString() method.
-     *
-     * @return String representation of object
-     */
-    @Override
-    public String toString()
-    {
-        return super.toString();
-    }
+    @RequestMapping(value = "/test", produces = {MediaType.APPLICATION_JSON_VALUE}, method = RequestMethod.GET)
+    public String testUrl();
 }

@@ -1,4 +1,4 @@
-package com.manh.cp;
+package com.github.prajan;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

@@ -16,9 +16,9 @@
  * Atlanta, GA 30339 USA
  */
 
-package com.manh.cp.controller;
+package com.github.prajan.controller;
 
-import com.manh.cp.dto.UniversityDTO;
+import com.github.prajan.dto.UniversityDTO;
 import io.swagger.annotations.*;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;

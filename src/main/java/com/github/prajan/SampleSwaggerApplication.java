@@ -1,6 +1,6 @@
-package com.manh.cp;
+package com.github.prajan;
 
-import com.manh.cp.feign.SampleFeignClient;
+import com.github.prajan.feign.SampleFeignClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
